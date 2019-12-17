@@ -37,7 +37,7 @@ body    /*body full screen*/
 .topPicture /*menu background*/
 {
 	position: relative;
-  background-image: url("purple.PNG"); 
+  background-image: url("purple.png"); 
   background-repeat: no-repeat; 
   background-size: 100% 80px;
   width: 100%;
