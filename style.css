@@ -9,6 +9,7 @@ body    /*body full screen*/
 }
 
 /*background full screen for presentation*/
+/*TODO*/
 .back::after 
 {
   content:"";
