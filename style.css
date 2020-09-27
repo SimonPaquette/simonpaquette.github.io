@@ -95,7 +95,7 @@ body    /*body full screen*/
   background-color: purple;
 }
 
-/*div for presentatio page*/
+/*div for presentation page*/
 .presentation
 {
   margin-top: 130px;
@@ -187,6 +187,9 @@ body    /*body full screen*/
   border-top: 2px solid purple;
   border-radius: 36px;
   background-color: #e4e4e4;
+}
+.project p
+{
   text-align: justify;
 }
 .intro /*mini resume of the project*/
@@ -203,7 +206,7 @@ body    /*body full screen*/
 
 .projectPicture img
 {
-  height:250px;
+  max-height:250px;
   max-width:100%;
 }
 .project:after {
