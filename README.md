@@ -1,4 +1,6 @@
 # simonpaquette.github.io
 My presentation, resume and projects
 
-Enter "simonpaquette.github.io" in the address bar will bring you to my index.html file
+This repo is the code for my personal portfolio: 
+[simonpaquette.github.io](simonpaquette.github.io)
+
