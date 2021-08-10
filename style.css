@@ -34,7 +34,7 @@ body {
 /* Set navigation header style */
 #navHeader {
     padding: 20px 50px 20px;
-    background-image: url("nav.PNG");
+    background-image: url("picture/nav.PNG");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ body {
 /* Set background image */
 #presentation:before {
     content:"";
-    background-image:url('background.png');
+    background-image:url('picture/background.png');
     background-size: cover; 
     opacity: 0.15;
     position: absolute;
@@ -188,6 +188,7 @@ body {
     margin-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 20px;
     border-top: 2px solid purple;
     border-bottom: 2px solid purple;
     border-radius: 36px;
@@ -199,6 +200,7 @@ body {
     float:left;
     width: 50%;
     padding-left: 25px; 
+    padding-right: 25px;
     text-align: justify;
 }
 .intro h1 {
@@ -211,13 +213,12 @@ body {
 .projectPicture {
     display: flex;
     justify-content: center;
-    width: 40%;
     height: 100%;
-    padding-left: 30px;
+    max-width: 45%;
 }
 .projectPicture img {
-    display: block;
     margin: auto;
     max-width:100%;
     max-height:250px;
+    overflow: auto;
 }
