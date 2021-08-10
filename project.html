@@ -1,0 +1,129 @@
+<!--
+    My presentation, resume and projects
+    Simon Paquette - Portfolio
+    Author: Simon Paquette
+    Latest update: 2021/08
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Simon Paquette">
+        <title>Simon Paquette - Portfolio</title>
+        <link rel="stylesheet" type = "text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+
+        <div id="navbar">
+            <div id="navHeader">
+                <span lang="en">Projects</span> <span lang="fr">Projets</span>
+                <button id="toggleLang" style="float:right;">
+                    <span lang="en">Français</span> <span lang="fr">English</span>
+                </button>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li class="left"> <a href="index.html"> <span lang="en">Presentation</span> <span lang="fr">Présentation</span> </a> </li>
+                    <li class="left"> <a href="resume.html"> <span lang="en">Resume</span> <span lang="fr">Curriculum Vitae</span> </a> </li>
+                    <li class="disable left"> <a href="project.html"> <span lang="en">Projects</span> <span lang="fr">Projets</span> </a> </li>
+                    <li class="right"> <a href="https://www.linkedin.com/in/simon-paquette-7533b6197/" target="_blank"> LinkedIn </a> </li>
+                    <li class="right"> <a href="https://github.com/SimonPaquette" target="_blank"> GitHub </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="projects">
+
+            <div class="project" >
+                <div class="intro" lang="en">
+                    <h1> NRCan floods Docker - Winter 2021 </h1>
+                    <p> In order to facilitate the development, the deployment of the code on any environment and the possibility to perform several processes in parallel, I developed a Docker image capable of executing automatic image processing in an isolated container. This image integrates various image processing scripts, several open-source libraries such as ESA SNAP as well as code allowing to download data from AWS and NRCan EODMS API (see image on the right). </p>
+                </div>
+                <div class="intro" lang="fr">
+                    <h1> NRCan Docker pour les inondations - Hiver 2021 </h1>
+                    <p> Afin de faciliter le développement, le déploiement du code sur tout environnement et la possibilité d'effectuer plusieurs processus en parallèle, j'ai développé une image Docker capable d'exécuter le traitement automatique d'images dans un conteneur isolé. Celle-ci intègre divers scripts de traitement d'images, plusieurs librairies open source telles que ESA SNAP ainsi que du code permettant de télécharger des données provenant de AWS et NRCan EODMS API (voir image ci-contre). </p>
+                </div>
+                <div class="projectPicture">  <img src="project6.png" /> </div>
+            </div>
+
+            <div class="project" >
+                <div class="intro" lang="en">
+                    <h1> Geographic Information System - Summer 2020 </h1>
+                    <p> NRCan uses satellite imagery to actively monitor spring flooding and ice breakup to produce near real-time maps to support emergency response activities in Canada. The development of algorithms, techniques and software for data processing is an important task. I have worked on processing Rasters using GDAL to produce polygons representing open water flooding and flooded vegetation. I developed Python scripts to apply automated algorithms related to remote sensing systems and to ensure their quality and reliability through unit tests.  </p>
+                    <p> For more details, you can visit <a href="https://www.nrcan.gc.ca/simply-science/21898" target="_blank">Mapping a Flood</a>. </p>
+                </div>
+                <div class="intro" lang="fr">
+                    <h1> Système d'information géographique - Été 2020 </h1>
+                    <p> RNCan utilise l’imagerie satellitaire pour surveiller activement les inondations et les débâcles de glace au printemps afin de produire des cartes géographiques en temps quasi réel pour appuyer les activités d’intervention d’urgence au Canada. Le développement des algorithmes, des techniques et des logiciels pour le traitement des données est une tâche importante. J'ai travaillé sur le traitement de Rasters à l'aide de GDAL afin de produire des polygones représentant les inondations en eau libre et la végétation inondée. J'ai développé des scripts Python pour appliquer des algorithmes automatisés liées aux systèmes de télédétection ainsi que d'en assurer la qualité et la fiabilité à l'aide de tests unitaires.  </p>
+                    <p> Pour plus de détail, vous pouvez visiter <a href="https://www.rncan.gc.ca/science-simplement/21899" target="_blank">Cartographie des inondations</a>. </p>
+                </div>
+                <div class="projectPicture">  <img src="project5.png" /> </div>
+            </div>
+            
+            <div class="project" >
+                <div class="intro" lang="en">
+                    <h1> Android Application - Fall 2019</h1>
+                    <p> During a team project in the course of introduction to software engineering, I developed an android application for managing appointments in clinics. I worked on the back-end in Java and on managing a database in real time using Firebase.  </p>
+                    <p> For more details, you can view an example of the code. <a href="NouveauService.java" target="_blank"> Here</a>, it is the code that allows you to create a new service, registered in the database. </p>
+                </div>
+                <div class="intro" lang="fr">
+                    <h1> Application Android - Automne 2019</h1>
+                    <p> Lors d'un projet d'équipe en cours d'introduction au génie logiciel, j'ai développé une application android pour la gestion de rendez-vous dans des cliniques. J'ai travaillé sur le back-end en Java et sur la gestion d'une base de données en temps réel en utilisant Firebase.  </p>
+                    <p> Pour plus de détail, vous pouvez visualiser un exemple du code. <a href="NouveauService.java" target="_blank"> Ici</a>, c'est le code qui permet de créer un nouveau service, enregistré dans la base de données. </p>
+                </div>
+                <div class="projectPicture">  <img src="project4.png" /> </div>
+            </div>
+
+            <div class="project" >
+                <div class="intro" lang="en">
+                    <h1> Lights Out - Winter 2019 </h1>
+                    <p> During an introductory computer course, I designed a small game using the MVC template in Java. I developed my skills in user interface and developed my understanding of the Breadth First Search algorithm. </p>
+                    <p> For more details, you can view an example of the code. <a href="LightsOut.java" target="_blank"> Here</a>, it is the code that applies the Breadth First Search algorithm. <a href="GameController.java" target="_blank"> Here</a>, it is the code that represents the Controller model of the interface. </p>
+                </div>
+                <div class="intro" lang="fr">
+                    <h1> Lights Out - Hiver 2019 </h1>
+                    <p> Lors d'un cours d'introduction à l'informatique, j'ai conçu un petit jeu en utilisant le patron MVC en Java. J'ai développé mes compétences en interface utilisateur et développé ma compréhension de l'algorithme de parcours en largeur. </p>
+                    <p> Pour plus de détail, vous pouvez visualiser un exemple du code. <a href="LightsOut.java" target="_blank"> Ici</a>, c'est le code qui applique l'algorithme de parcours en largeur. <a href="GameController.java" target="_blank"> Ici</a>, c'est le code qui représente le model Controller de l'interface. </p>
+                </div>
+                <div class="projectPicture">  <img src="project3.png" /> </div>
+            </div>
+
+            <div class="project" >
+                <div class="intro" lang="en">
+                    <h1> The matrices - Fall 2018 </h1>
+                    <p> Following my course in linear algebra, I developed a small program in Python capable of doing various operations on matrices. This allowed me to work on 2D arrays while practicing mathematical basics such as scaling a matrix and calculating its determinant. </p>
+                    <p> For more details, you can view the entire code. <a href="matrice.py" target="_blank"> Here</a>, the code groups the possible operations. </p>
+                </div>
+                <div class="intro" lang="fr">
+                    <h1> Les matrices - Automne 2018 </h1>
+                    <p> Suite à mon cours d'algèbre linéaire, j'ai développé un petit programme en Python capable de faire diverses opérations sur les matrices. Ceci m'a permis de travailler sur des tableaux en 2D tout en pratiquant des bases mathématiques tels que l'échelonnage d'une matrice et calculer son déterminant. </p>
+                    <p> Pour plus de détail, vous pouvez visualiser l'intégralité du code. <a href="matrice.py" target="_blank"> Ici</a>, le code regroupe les opérations possibles. </p>
+                </div>
+                <div class="projectPicture">  <img src="project2.png" /> </div>
+            </div>
+            
+            <div class="project" >
+                <div class="intro" lang="en">
+                    <h1> Image processing - Summer 2018 </h1>
+                    <p> During my job at VIVA Lab, I worked on various extraction and processing techniques on a large quantity of images with Python. I had to make image comparisons using colors with OpenCV or PIL as well as graphical representations on data in Json file with matplotlib.  </p>
+                    <p> For more details, you can view an example of the code. <a href="color_identification.py" target="_blank"> Here</a>, it is the part that compare images of cyclists. The recognition principle is to separate the images in 4 parts and obtain their histograms to compare them with other images to estimate their similarity. </p>
+                </div>
+                <div class="intro" lang="fr">
+                    <h1> Traitement d'images - Été 2018 </h1>
+                    <p> Lors de mon emploi auprès de VIVA Lab, j'ai travaillé sur diverses techniques d'extraction et de traitement sur une grande quantité d'images avec Python. J'ai dû effectuer des comparaisons d'images à l'aide des couleurs avec OpenCV ou PIL ainsi que des représentations graphiques sur des données en fichier Json avec matplotlib.  </p>
+                    <p> Pour plus de détail, vous pouvez visualiser un exemple du code. <a href="color_identification.py" target="_blank"> Ici</a>, c'est le code utile comparer des images de cyclistes. Le principe de reconnaissance est basé sur la séparation des images en 4 parties et obtenir leurs histogrammes afin de les comparer avec d'autres images pour évaluer leur ressemblance. </p>
+                </div>
+                <div class="projectPicture">  <img src="project1.png" /> </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
