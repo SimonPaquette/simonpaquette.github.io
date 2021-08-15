@@ -1,0 +1,85 @@
+/*
+    My presentation, resume and projects
+    Simon Paquette - Portfolio
+    Author: Simon Paquette
+    Latest update: 2021/08
+
+    CSS for printable page
+    Only applicable to resume page
+*/
+
+
+/*
+** ----------------------------------------------
+**                  PAGE STYLE
+** ----------------------------------------------
+*/
+
+/* Remove page title and date */
+@page { 
+    size: auto;  
+    margin: 8mm;
+}
+
+/* Hidden items */
+header, .noprint {
+    display: none;
+}
+
+
+/*
+** ----------------------------------------------
+**                  SECTION STYLE
+** ----------------------------------------------
+*/
+
+/* Set section div */
+section {
+    break-inside: avoid;
+}
+
+/* Text display */
+h1 {
+    margin: 0.5em 0;
+    padding: 0.25em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: large;
+    text-align: center;
+}
+h2 {
+    float: left;
+    margin: 0;
+    font-size: medium;
+}
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+
+/*
+** ----------------------------------------------
+**                  TEXT STYLE
+** ----------------------------------------------
+*/
+
+/* Personal Information */
+.data h1 {
+    display: none;
+}
+.data p {
+    text-align: center;
+}
+.data a {
+    color: black;
+}
+
+/* Position Date Range */
+.date {
+    float: right;
+    font-weight: bold;
+}

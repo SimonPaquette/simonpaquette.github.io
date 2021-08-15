@@ -24,6 +24,11 @@ body {
     margin-right: 50px;
 }
 
+/* Information display only on media print */
+.print {
+    display: none;
+}
+
 
 /*
 ** ----------------------------------------------
@@ -167,6 +172,16 @@ body {
 #resume p, #resume ul {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+/* Set details style to be more readable */
+details {
+    padding: 5px;
+}
+
+/* MaKe links less appealing */
+.data a {
+    color: black;
 }
 
 

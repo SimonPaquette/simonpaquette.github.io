@@ -13,14 +13,15 @@
         <meta charset="utf-8">
         <meta name="author" content="Simon Paquette">
         <title>Simon Paquette - Portfolio</title>
-        <link rel="stylesheet" type = "text/css" href="style.css">
+        <link rel="stylesheet" type = "text/css" media="screen" href="style.css">
+        <link rel="stylesheet" type = "text/css" media="print" href="print.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </head>
 
     <body>
 
-        <div id="navbar">
+        <header id="navbar">
             <div id="navHeader">
                 <span lang="en">Resume</span> <span lang="fr">Curriculum Vitae</span>
                 <button id="toggleLang" style="float:right;">
@@ -36,30 +37,34 @@
                     <li class="right"> <a href="https://github.com/SimonPaquette" target="_blank"> GitHub </a> </li>
                 </ul>
             </nav>
-        </div>
+        </header>
 
         <div id="resume">
 
-            <section lang="en">
+            <section lang="en" class="data">
                 <h1> Personal data </h1>
-                <p> <b>Simon Paquette</b> </p>
-                <p> <b>Email :</b> simpaquette32@gmail.com </p>
-                <p> <b>Phone :</b> 819 593 4881 </p>
-                <p> <b>Spoken and Written Language :</b> French and English </p>
+                <p> <strong>Simon Paquette</strong> </p>
+                <p class="print"> <b>Web:</b> <a href="https://simonpaquette.github.io/">simonpaquette.github.io</a> </p>
+                <p> <b>Email:</b> <a href="mailto: simpaquette32@gmail.com">simpaquette32@gmail.com</a> </p>
+                <p> <b>Phone:</b> <a href="tel: 819-593-4881">819-593-4881</a> </p>
+                <p class="noprint"> <b>Spoken and Written Language :</b> French and English </p>
             </section>
 
-            <section lang="fr">
+            <section lang="fr" class="data">
                 <h1> Renseignements personnels </h1>
-                <p> <b>Simon Paquette</b> </p>
-                <p> <b>Courriel :</b> simpaquette32@gmail.com </p>
-                <p> <b>Téléphone :</b> 819 593 4881 </p>
-                <p> <b>Langues parlées et écrites :</b> Français et Anglais </p> 
+                <p> <strong>Simon Paquette</strong> </p>
+                <p class="print"> <b>Web : </b> <a href="https://simonpaquette.github.io/">simonpaquette.github.io</a> </p>
+                <p> <b>Courriel : </b> <a href="mailto: simpaquette32@gmail.com">simpaquette32@gmail.com</a> </p>
+                <p> <b>Téléphone : </b> <a href="tel: 819-593-4881">819-593-4881</a> </p>
+                <p class="noprint"> <b>Langues parlées et écrites :</b> Français et Anglais </p> 
             </section>
 
             <section lang="en">
                 <h1> Education </h1>
                 <h2> BSc with Honours in Computer Science, minor in biophysics, CO-OP Program</h2>
-                <p> University of Ottawa, Ottawa, Ontario <br> September 2018 - present </p>
+                <p class="date"> September 2018 - present </p>
+                <br class="print">
+                <p> University of Ottawa, Ottawa, Ontario  </p>
                 <ul> 
                     <li> Graduation planned in December 2022 </li>
                     <li> GPA of 9.24 </li>
@@ -68,12 +73,16 @@
                     <li> Received a merit scholarship </li>
                 </ul>
                 <h2> College diploma, Natural sciences</h2>
-                <p> Cégep de l'Outaouais, Gatineau, Québec <br> August 2016 - May 2016 </p>
+                <p class="date"> August 2016 - May 2018 </p>
+                <br class="print">
+                <p> Cégep de l'Outaouais, Gatineau, Québec </p>
                 <ul> 
                     <li> Received a merit scholarship in natural sciences </li>
                 </ul>
                 <h2> High school diploma, Concentration in mathematics and sciences</h2>
-                <p> École polyvalente Nicolas-Gatineau, Gatineau, Québec <br> August 2011 - June 2016 </p>
+                <p class="date"> August 2011 - June 2016 </p>
+                <br class="print">
+                <p> École polyvalente Nicolas-Gatineau, Gatineau, Québec </p>
                 <ul> 
                     <li> Contestant: Expo-Sciences 2011, 2012, 2013 </li>
                     <li> Contestant: Défi Génie Inventif 2011, 2012, 2013 </li>
@@ -84,7 +93,9 @@
             <section lang="fr">
                 <h1> Éducation </h1>
                 <h2> Baccalauréat en sciences spécialisé en informatique, mineure en biophysique, Régime COOP</h2>
-                <p> Université d'Ottawa, Ottawa, Ontario <br> septembre 2018 - présent </p>
+                <p class="date"> septembre 2018 - présent </p>
+                <br class="print">
+                <p> Université d'Ottawa, Ottawa, Ontario </p>
                 <ul> 
                     <li> Obtention du diplôme prévu en décembre 2022 </li>
                     <li> MPC de 9,24 </li>
@@ -93,12 +104,16 @@
                     <li> Obtenu une bourse au mérite </li>
                 </ul>
                 <h2> Diplôme d'étude collégiale, Programme Sciences de la Nature</h2>
-                <p> Cégep de l'Outaouais, Gatineau, Québec <br> août 2016 - mai 2018 </p>
+                <p class="date"> août 2016 - mai 2018 </p>
+                <br class="print">
+                <p> Cégep de l'Outaouais, Gatineau, Québec </p>
                 <ul> 
                     <li> Obtenu une bourse au mérite en sciences de la nature </li>
                 </ul>
                 <h2> Diplôme d'étude secondaire, Concentration Sciences-mathématiques</h2>
-                <p> École polyvalente Nicolas-Gatineau, Gatineau, Québec <br> août 2011 - juin 2016 </p>
+                <p class="date"> août 2011 - juin 2016 </p>
+                <br class="print">
+                <p> École polyvalente Nicolas-Gatineau, Gatineau, Québec </p>
                 <ul> 
                     <li> Participation Expo-Sciences 2011, 2012, 2013 </li>
                     <li> Participation au Défi Génie Inventif : 2011, 2012, 2013 </li>
@@ -109,7 +124,9 @@
             <section lang="en">
                 <h1> Work Experience </h1>
                 <h2> Geomatics systems developer </h2>
-                <p> Natural Resources Canada, Emergency Geomatics Service, Ottawa, Ontario <br> June 2020 - April 2021 </p>
+                <p class="date"> June 2020 - April 2021 </p>
+                <br class="print">
+                <p> Natural Resources Canada, Emergency Geomatics Service, Ottawa, Ontario </p>
                 <ul>
                     <li> Developed Python scripts to automate the processing of data from remote sensing systems to map floods </li>
                     <li> Worked with Geographic Information System libraries such as GDAL, SNAP, ArcGIS and PCI </li>
@@ -121,7 +138,9 @@
                     <li> Developed unit tests using the Python Unittest library </li>
                 </ul>
                 <h2> Research intern, Computer Science </h2>
-                <p> University of Ottawa, VIVA Lab, Ottawa, Ontario <br> June 2017 - August 2018 </p>
+                <p class="date"> June 2017 - August 2018 </p>
+                <br class="print">
+                <p> University of Ottawa, VIVA Lab, Ottawa, Ontario </p>
                 <ul>
                     <li> Preprocessed data to help research in computer vision using video processing and image analysis </li>
                     <li> Manipulated Json file and created script for local database control in Python </li>
@@ -133,7 +152,9 @@
             <section lang="fr">
                 <h1> Expérience de travail </h1>
                 <h2> Développeur de systèmes géomatiques </h2>
-                <p> Ressources Naturelles Canada, Service de Géomatique d’Urgence, Ottawa, Ontario <br> juin 2020 - avril 2021 </p>
+                <p class="date"> juin 2020 - avril 2021 </p>
+                <br class="print">
+                <p> Ressources Naturelles Canada, Service de Géomatique d’Urgence, Ottawa, Ontario </p>
                 <ul>
                     <li> Développer des scripts Python pour automatiser le traitement de données provenant de systèmes de télédétection pour cartographier les inondations </li>
                     <li> Travailler avec des librairies de système d'information géographique tel que GDAL, SNAP, ArcGIS et PCI </li>
@@ -145,7 +166,9 @@
                     <li> Développer des tests unitaires utilisant la librairie Python Unittest </li>
                 </ul>
                 <h2> Assistant chercheur, Sciences informatiques </h2>
-                <p> Université d’Ottawa, VIVA Lab, Ottawa, Ontario <br> juin 2017 - août 2018 </p>
+                <p class="date"> juin 2017 - août 2018 </p>
+                <br class="print">
+                <p> Université d’Ottawa, VIVA Lab, Ottawa, Ontario </p>
                 <ul>
                     <li> Effectuer le prétraitement de données pour la recherche en intelligence artificielle sur la vision informatique </li>
                     <li> Manipuler des fichiers Json et créer des scripts sur le contrôle de base de données locales en Python </li>
@@ -156,7 +179,9 @@
 
             <section lang="en">
                 <h1> Skills </h1>
+                <p class="print"> <b>Spoken and Written Language :</b> French and English <br> </p>
                 <h2> Computer Science </h2>
+                <br class="print">
                 <ul> 
                     <li> Good knowledge of Python, Java, and C++ </li>
                     <li> Basic knowledge of HTML, CSS, JavaScript, C, Go, Prolog, Scheme, Ocaml, SQL </li>
@@ -178,6 +203,7 @@
                     <li> Solved mini project with Raspberry Pi </li>
                 </ul>
                 <h2> Mathematics </h2>
+                <br class="print">
                 <ul> 
                     <li> Learned graph theory, recurrence relations and basic cryptographical applications </li>
                     <li> Analyzed functions with derivates and techniques of integration, to develop improper integrals, partial derivates, sequences and series </li>
@@ -186,6 +212,7 @@
                     <li>Calculated probability on random variables and analysed statistics models </li>
                 </ul>
                 <h2> Sciences </h2>
+                <br class="print">
                 <ul> 
                     <li> Studied the cell communication and the cytoskeleton </li>
                     <li> Recognized the structure and the varieties of cell </li>
@@ -204,7 +231,9 @@
 
             <section lang="fr">
                 <h1> Compétences </h1>
+                <p class="print"> <b>Langues parlées et écrites :</b> Français et Anglais <br> </p>
                 <h2> Programmation </h2>
+                <br class="print">
                 <ul> 
                     <li> Bonne connaissance de Python, Java et de C++ </li>
                     <li> Connaissance de base en HTML, CSS, JavaScript, C, Go, Prolog, Scheme, Ocaml, SQL </li>
@@ -226,6 +255,7 @@
                     <li> Résoudre des petits problèmes avec Raspberry Pi </li>
                 </ul>
                 <h2> Mathématiques </h2>
+                <br class="print">
                 <ul> 
                     <li> Apprendre la théorie des graphes, les relations de récurrence et les applications cryptographiques de base </li>
                     <li> Analyser les fonctions avec les dérivées et les techniques d’intégration, pour développer les intégrales impropres, les dérivées partiels, les séquences et les séries </li>
@@ -234,6 +264,7 @@
                     <li> Calculer les probabilités de variables aléatoires et analyser les modèles statistiques </li>
                 </ul>
                 <h2> Sciences </h2>
+                <br class="print">
                 <ul> 
                     <li> Étudier la communication cellulaire et le cytosquelette </li>
                     <li> Reconnaitre les structures et les fonctions de cellules et des organites </li>
@@ -253,18 +284,24 @@
             <section lang="en">
                 <h1> Other Work Experience </h1>
                 <h2> Cook </h2>
-                <p> Resto Bistro Rumeur, Gatineau, Québec <br> April 2019 - December 2019 </p>
+                <br class="print">
+                <p class="date"> April 2019 - December 2019 </p>
+                <p> Resto Bistro Rumeur, Gatineau, Québec </p>
                 <ul>
                     <li> Developed team collaboration in order to prepare and manage 4-star services </li>
                     <li> Acquired the competence to work under pressure while serving banquet of approximately 75 persons </li>
                 </ul>
-                <h2> Cook </h2>
-                <p> Mikes Restaurant, Gatineau, Québec <br> October 2017 - May 2018 </p>
+                <br class="noprint">
+                <p class="date"> October 2017 - May 2018 </p>
+                <p> Mikes Restaurant, Gatineau, Québec </p>
                 <ul>
                     <li> Developed the division of work in an efficient and fast teamwork </li>
                 </ul>
+                <br class="print">
                 <h2> Team Leader, Kitchen </h2>
-                <p> A&W Restaurant, Gatineau, Québec <br> June 2015 - May 2017 </p>
+                <p class="date"> June 2015 - May 2017 </p>
+                <br class="print">
+                <p> A&W Restaurant, Gatineau, Québec </p>
                 <ul>
                     <li> Developed the management by making decision for the proper function of the kitchen </li>
                     <li> Show leadership by distributing work-related responsibilities </li>
@@ -274,22 +311,118 @@
             <section lang="fr">
                 <h1> Expérience de travail supplémentaire </h1>
                 <h2> Cuisinier </h2>
-                <p> Resto Bistro Rumeur, Gatineau, Québec <br> avril 2019 - décembre 2019 </p>
+                <br class="print">
+                <p class="date"> avril 2019 - décembre 2019 </p>
+                <p> Resto Bistro Rumeur, Gatineau, Québec </p>
                 <ul>
                     <li> Développer la collaboration en équipe afin de préparer et gérer des services 4 étoiles </li>
                     <li> Acquérir la compétence de travailler sous pression pendant le service de banquets d'environ 75 personnes </li>
                 </ul>
-                <h2> Cuisinier </h2>
-                <p> Restaurant Mikes, Gatineau, Québec <br> octobre 2017 - mai 2018 </p>
+                <br class="noprint">
+                <p class="date"> octobre 2017 - mai 2018 </p>
+                <p> Restaurant Mikes, Gatineau, Québec </p>
                 <ul>
                     <li> Développer la répartition des tâches lors d'un travail en équipe efficace et rapide</li>
                 </ul>
+                <br class="print">
                 <h2> Chef d’équipe, Cuisine </h2>
-                <p> Restaurant A&W, Gatineau, Québec <br> juin 2015 - mai 2017 </p>
+                <p class="date"> juin 2015 - mai 2017 </p>
+                <br class="print">
+                <p> Restaurant A&W, Gatineau, Québec </p>
                 <ul>
                     <li> Développer la gestion en prenant des décisions pour le bon fonctionnement de la cuisine </li>
                     <li> Faire preuve de leadership en distribuant des responsabilités liées au travail </li>
                 </ul>
+            </section>
+
+            <section lang="en" class="noprint">
+                <h1> University Courses </h1>
+                <details>  
+                    <summary> Computer Science </summary>
+                    <ul>
+                        <li> <b>ITI1500:</b> Digital Systems I </li>                        
+                        <li> <b>ITI1521:</b> Introduction to Computing I </li>
+                        <li> <b>ITI1522:</b> Introduction to Computing II </li>
+                        <li> <b>CSI2501:</b> Discrete Structures </li>
+                        <li> <b>CSI2510:</b> Data Structures and Algorithms </li>
+                        <li> <b>CSI2520:</b> Programming Paradigms </li>
+                        <li> <b>CSI2132:</b> Databases I </li>
+                        <li> <b>CSI2772:</b> Advanced Programming Concepts With C++ </li>
+                        <li> <b>CSI2911:</b> Professional Practice in Computing </li>
+                        <li> <b>CSI3104:</b> Introduction to Formal Languages </li>
+                        <li> <b>CSI3505:</b> Design and Analysis of Algorithms I </li>
+                        <li> <b>CSI3520:</b> Programming Language Concepts </li>
+                        <li> <b>CSI3531:</b> Operating Systems </li>                        
+                        <li> <b>CSI3140:</b> WWW Structures, Techniques and Standards </li>
+                        <li> <b>SEG2505:</b> Introduction to Software Engineering </li>
+                        <li> <b>CEG2536:</b> Computer Architecture I </li>
+                        <li> <b>CEG3585:</b> Introduction to Data Communications and Networking </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary> Mathematics & Sciences </summary>
+                    <ul>
+                        <li> <b>MAT1720:</b> Calculus I </li>
+                        <li> <b>MAT1722:</b> Calculus II </li>
+                        <li> <b>MAT1741:</b> Introduction to Linear Algebra </li>
+                        <li> <b>MAT1748:</b> Discrete Mathematics for Computing </li>
+                        <li> <b>MAT2777:</b> Probability and Statistics for Engineers </li>
+                        <li> <b>PHY1521:</b> Fundamentals of Physics I </li>
+                        <li> <b>PHY1522:</b> Fundamentals of Physics II </li>
+                        <li> <b>PHY2325:</b> Physics in Biology </li>
+                        <li> <b>PHY3325:</b> Introduction to Molecular Biophysics </li>
+                        <li> <b>BIO1530:</b> Introduction to Organismal Biology </li>
+                        <li> <b>BIO1540:</b> Introduction to Cell Biology </li>
+                        <li> <b>BIO3553:</b> Cell Biology </li>
+                        <li> <b>CMH1711:</b> Principles of Chemistry </li>
+                        <li> <b>CHM1721:</b> Organic Chemistry I </li>
+                    </ul>
+                </details>
+            </section>
+
+            <section lang="fr" class="noprint">
+                <h1> Cours Universitaires </h1>
+                <details>  
+                    <summary> Informatiques </summary>
+                    <ul>
+                        <li> <b>ITI1500:</b> Systèmes numériques I </li>                        
+                        <li> <b>ITI1521:</b> Introduction à l'informatique I </li>
+                        <li> <b>ITI1522:</b> Introduction à l'informatique II </li>
+                        <li> <b>CSI2501:</b> Structures discrètes </li>
+                        <li> <b>CSI2510:</b> Structures de données et algorithmes </li>
+                        <li> <b>CSI2520:</b> Paradigmes de programmation </li>
+                        <li> <b>CSI2132:</b> Bases de données I </li>
+                        <li> <b>CSI2772:</b> Concepts avancés de programmation en C++ </li>
+                        <li> <b>CSI2911:</b> Pratique professionnelle de l'informatique </li>
+                        <li> <b>CSI3104:</b> Introduction aux langages formels </li>
+                        <li> <b>CSI3505:</b> Conception et analyse des algorithmes I </li>
+                        <li> <b>CSI3520:</b> Concepts des langages de programmation </li>
+                        <li> <b>CSI3531:</b> Systèmes d'exploitation </li>                        
+                        <li> <b>CSI3140:</b> Structures, techniques et normes du Web </li>
+                        <li> <b>SEG2505:</b> Introduction au génie logiciel </li>
+                        <li> <b>CEG2536:</b> Architecture des ordinateurs I </li>
+                        <li> <b>CEG3585:</b> Introduction à la communication de données et au réseautage </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary> Mathématiques & Sciences </summary>
+                    <ul>
+                        <li> <b>MAT1720:</b> Calcul différentiel et intégral I </li>
+                        <li> <b>MAT1722:</b> Calcul différentiel et intégral II </li>
+                        <li> <b>MAT1741:</b> Introduction à l'algèbre linéaire </li>
+                        <li> <b>MAT1748:</b> Mathématiques discrètes pour l'informatique </li>
+                        <li> <b>MAT2777:</b> Probabilités et statistique pour ingénieurs </li>
+                        <li> <b>PHY1521:</b> Principes fondamentaux de physique I </li>
+                        <li> <b>PHY1522:</b> Principes fondamentaux de physique II </li>
+                        <li> <b>PHY2325:</b> La physique en biologie </li>
+                        <li> <b>PHY3325:</b> Introduction à la biophysique moléculaire </li>
+                        <li> <b>BIO1530:</b> Introduction à la biologie des organismes </li>
+                        <li> <b>BIO1540:</b> Introduction à la biologie cellulaire </li>
+                        <li> <b>BIO3553:</b> Biologie cellulaire </li>
+                        <li> <b>CMH1711:</b> Principes de chimie </li>
+                        <li> <b>CHM1721:</b> Chimie organique I </li>
+                    </ul>
+                </details>
             </section>
 
             <br><br>
