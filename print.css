@@ -48,7 +48,7 @@ h1 {
     text-align: center;
 }
 h2 {
-    float: left;
+    display: inline-block;
     margin: 0;
     font-size: medium;
 }
@@ -60,6 +60,12 @@ ul {
     padding-bottom: 0.5em;
 }
 
+/* Position Date Range */
+.date {
+    float: right;
+    font-weight: bold;
+}
+
 
 /*
 ** ----------------------------------------------
@@ -67,7 +73,7 @@ ul {
 ** ----------------------------------------------
 */
 
-/* Personal Information */
+/* Personal Information Section */
 .data h1 {
     display: none;
 }
@@ -78,8 +84,16 @@ ul {
     color: black;
 }
 
-/* Position Date Range */
-.date {
-    float: right;
-    font-weight: bold;
+/* Skills Sections */
+.skill h2 {
+    padding-top: 0.25em;
+    text-decoration: underline;
 }
+.skill p {
+    padding-left: 1em;
+}
+.align {
+    display: inline-block;
+    width: 70px;
+}
+
