@@ -56,7 +56,7 @@ public class NouveauService extends AppCompatActivity {
         Intent intent = getIntent();
         serviceID = intent.getStringExtra("service");
 
-        //DISTINCTION ENTRE creer ET modifier
+        // DISTINCTION ENTRE creer ET modifier
         if (serviceID == null) {
 
             accept.setVisibility(View.GONE);
@@ -74,7 +74,7 @@ public class NouveauService extends AppCompatActivity {
 
     }
 
-    //LIRE DATABASE
+    // LIRE DATABASE
     @Override
     protected void onStart() {
         super.onStart();
@@ -83,7 +83,7 @@ public class NouveauService extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    //GET INFO DATABASE
+                    // GET INFO DATABASE
 
                     HashMap info = (HashMap) postSnapshot.getValue();
                     key = postSnapshot.getKey();
@@ -108,11 +108,10 @@ public class NouveauService extends AppCompatActivity {
             }
         }));
 
-
     }
 
-    //CREER SERVICE FIREBASE
-    public void Creation (View view) {
+    // CREER SERVICE FIREBASE
+    public void Creation(View view) {
 
         if (alreadyCreated(description.getText().toString(), spinner.getSelectedItem().toString())) {
             Toast.makeText(getApplicationContext(), "Le service existe déjà", Toast.LENGTH_LONG).show();
@@ -122,7 +121,8 @@ public class NouveauService extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Veuillez choisir un role", Toast.LENGTH_LONG).show();
         } else {
 
-            ServiceObject newService = new ServiceObject(description.getText().toString(), spinner.getSelectedItem().toString());
+            ServiceObject newService = new ServiceObject(description.getText().toString(),
+                    spinner.getSelectedItem().toString());
             dataService.push().setValue(newService);
 
             Intent intent = new Intent(NouveauService.this, Administrateur.class);
@@ -141,7 +141,8 @@ public class NouveauService extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Veuillez choisir un role", Toast.LENGTH_LONG).show();
         } else {
 
-            ServiceObject newService = new ServiceObject(description.getText().toString(), spinner.getSelectedItem().toString());
+            ServiceObject newService = new ServiceObject(description.getText().toString(),
+                    spinner.getSelectedItem().toString());
             dataService.child(serviceID).setValue(newService);
 
             Intent intent = new Intent(NouveauService.this, Administrateur.class);
@@ -151,7 +152,7 @@ public class NouveauService extends AppCompatActivity {
 
     }
 
-    //METHOD TO GO BACK
+    // METHOD TO GO BACK
     public void cancel(View view) {
 
         Intent intent = new Intent(NouveauService.this, Administrateur.class);
@@ -160,8 +161,7 @@ public class NouveauService extends AppCompatActivity {
 
     }
 
-
-    private boolean alreadyCreated (String id, String service) {
+    private boolean alreadyCreated(String id, String service) {
         boolean used = false;
         for (int i = 0; i < idList.size(); i++) {
             if (id.equals(idList.get(i)) && service.equals(serviceList.get(i))) {

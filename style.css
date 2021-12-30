@@ -5,7 +5,6 @@
     Latest update: 2021/08
 */
 
-
 /*
 ** ----------------------------------------------
 **                  DOCUMENT
@@ -14,21 +13,22 @@
 
 /* Remove automatic margin */
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /* Set personal margin */
-#presentation, #resume, #projects {
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+#presentation,
+#resume,
+#projects {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* Information display only on media print */
 .print {
-    display: none;
+  display: none;
 }
-
 
 /*
 ** ----------------------------------------------
@@ -38,72 +38,71 @@ body {
 
 /* Set navigation header style */
 #navHeader {
-    padding: 20px 50px 20px;
-    background-image: url("picture/nav.PNG");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-	color:white;
-	font-size: 30px;  
+  padding: 20px 50px 20px;
+  background-image: url("picture/nav.PNG");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 30px;
 }
 
 /* Set button to toggle language between "en" and "fr" */
 #toggleLang {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 15px;
-    line-height: 30px;   
+  background: none;
+  border: none;
+  color: white;
+  font-size: 15px;
+  line-height: 30px;
 }
 #toggleLang:hover {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Set menu style for navigation between pages  */
 #menu {
-    padding-left: 50px;
-    padding-right: 50px;
-    background: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: black;
 }
 #menu ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none;
-    font-size: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  font-size: 20px;
 }
 #menu li:hover {
-    background-color: purple;
+  background-color: purple;
 }
 #menu li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /* Set float left style */
 .left {
-    float: left;
-    padding-left: 5px;
-    padding-right: 25px;
-    border-left-style: solid;
-    border-left-color: purple;
+  float: left;
+  padding-left: 5px;
+  padding-right: 25px;
+  border-left-style: solid;
+  border-left-color: purple;
 }
 
 /* Set float right style */
 .right {
-    float: right;
-    padding-left: 25px;
-    padding-right: 5px;
-    border-right-style: solid;
-    border-right-color: purple;
+  float: right;
+  padding-left: 25px;
+  padding-right: 5px;
+  border-right-style: solid;
+  border-right-color: purple;
 }
 
 /* Remove possibility to click to navigate to this page */
 .disable {
-    background-color:#320032;
-    pointer-events: none;
+  background-color: #320032;
+  pointer-events: none;
 }
-
 
 /*
 ** ----------------------------------------------
@@ -113,42 +112,41 @@ body {
 
 /* Set background image */
 #presentation:before {
-    content:"";
-    background-image:url('picture/background.png');
-    background-size: cover; 
-    opacity: 0.15;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1; 
+  content: "";
+  background-image: url("picture/background.png");
+  background-size: cover;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 /* Set profile picture */
 #myPicture {
-    float: left;
-    width: 20%;
-    padding-top: 20px;
-    padding-left: 50px;
+  float: left;
+  width: 20%;
+  padding-top: 20px;
+  padding-left: 50px;
 }
 #myPicture img {
-    width: 70%;
-    height: 70%;
-    padding: 2px;
-    border: 2px solid #320032;
+  width: 70%;
+  height: 70%;
+  padding: 2px;
+  border: 2px solid #320032;
 }
 
 /* Set personal description */
 .text {
-    float: left;
-    width: 65%;
-    padding-left: 20px;
-    color: black;
-    font-size: 18px;
-    text-align: justify;
+  float: left;
+  width: 65%;
+  padding-left: 20px;
+  color: black;
+  font-size: 18px;
+  text-align: justify;
 }
-
 
 /*
 ** ----------------------------------------------
@@ -158,56 +156,56 @@ body {
 
 /* Split in 2 sections */
 #resume {
-    display: flex;
-    margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 10px;
 }
 #leftPart {
-    width: 60%;
-    margin-right: 10px;
+  width: 60%;
+  margin-right: 10px;
 }
 #rightPart {
-    width: 40%;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 2px solid #320032;
-    border-radius: 16px;
-    background-color: #e4e4e4;
+  width: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #320032;
+  border-radius: 16px;
+  background-color: #e4e4e4;
 }
 
 /* Set text style for overall resume */
 #resume h1 {
-    margin-top: 30px;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    color: purple;
-    font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: purple;
+  font-size: 22px;
 }
 #resume h2 {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 20px;
 }
-#resume p, #resume ul {
-    margin-top: 5px;
-    margin-bottom: 5px;
+#resume p,
+#resume ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* Set details style to be more readable */
 details {
-    padding: 5px;
+  padding: 5px;
 }
 
 /* MaKe links less appealing */
 .data a {
-    color: black;
+  color: black;
 }
 
 /* language section: set alignment */
 .align {
-    display: inline-block;
-    width: 70px;
+  display: inline-block;
+  width: 70px;
 }
-
 
 /*
 ** ----------------------------------------------
@@ -217,47 +215,47 @@ details {
 
 /* Set all projects items into a grid */
 #projects {
-    display: grid;
+  display: grid;
 }
 
 /* Set project grid style */
 .project {
-    margin-bottom:40px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    border-top: 2px solid purple;
-    border-bottom: 2px solid purple;
-    border-radius: 36px;
-    background-color: #e4e4e4;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  border-top: 2px solid purple;
+  border-bottom: 2px solid purple;
+  border-radius: 36px;
+  background-color: #e4e4e4;
 }
 
 /* Display project's description text */
 .intro {
-    float:left;
-    width: 50%;
-    padding-left: 25px; 
-    padding-right: 25px;
-    text-align: justify;
+  float: left;
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: justify;
 }
 .intro h1 {
-    margin-top: 0px;
-    color: purple;
-    font-size: 24px;
+  margin-top: 0px;
+  color: purple;
+  font-size: 24px;
 }
 
 /* Display project's picture */
 .projectPicture {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    max-width: 45%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  max-width: 45%;
 }
 .projectPicture img {
-    margin: auto;
-    max-width:100%;
-    max-height:250px;
-    overflow: auto;
+  margin: auto;
+  max-width: 100%;
+  max-height: 250px;
+  overflow: auto;
 }

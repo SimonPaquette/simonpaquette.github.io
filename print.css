@@ -8,7 +8,6 @@
     Only applicable to resume page
 */
 
-
 /*
 ** ----------------------------------------------
 **                  PAGE STYLE
@@ -16,16 +15,16 @@
 */
 
 /* Remove page title and date */
-@page { 
-    size: auto;  
-    margin: 8mm;
+@page {
+  size: auto;
+  margin: 8mm;
 }
 
 /* Hidden items */
-header, .noprint {
-    display: none;
+header,
+.noprint {
+  display: none;
 }
-
 
 /*
 ** ----------------------------------------------
@@ -35,37 +34,36 @@ header, .noprint {
 
 /* Set section div */
 section {
-    break-inside: avoid;
+  break-inside: avoid;
 }
 
 /* Text display */
 h1 {
-    margin: 0.5em 0;
-    padding: 0.25em 0;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    font-size: large;
-    text-align: center;
+  margin: 0.5em 0;
+  padding: 0.25em 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: large;
+  text-align: center;
 }
 h2 {
-    display: inline-block;
-    margin: 0;
-    font-size: medium;
+  display: inline-block;
+  margin: 0;
+  font-size: medium;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
-    margin: 0;
-    padding-bottom: 0.5em;
+  margin: 0;
+  padding-bottom: 0.5em;
 }
 
 /* Position Date Range */
 .date {
-    float: right;
-    font-weight: bold;
+  float: right;
+  font-weight: bold;
 }
-
 
 /*
 ** ----------------------------------------------
@@ -75,25 +73,24 @@ ul {
 
 /* Personal Information Section */
 .data h1 {
-    display: none;
+  display: none;
 }
 .data p {
-    text-align: center;
+  text-align: center;
 }
 .data a {
-    color: black;
+  color: black;
 }
 
 /* Skills Sections */
 .skill h2 {
-    padding-top: 0.25em;
-    text-decoration: underline;
+  padding-top: 0.25em;
+  text-decoration: underline;
 }
 .skill p {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 .align {
-    display: inline-block;
-    width: 70px;
+  display: inline-block;
+  width: 70px;
 }
-

@@ -8,56 +8,122 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Simon Paquette" />
+    <title>Simon Paquette - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Simon Paquette">
-        <title>Simon Paquette - Portfolio</title>
-        <link rel="stylesheet" type = "text/css" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="script.js"></script>
-    </head>
+  <body>
+    <header id="navbar">
+      <div id="navHeader">
+        <span lang="en">Presentation</span> <span lang="fr">Présentation</span>
+        <button id="toggleLang" style="float: right">
+          <span lang="en">Français</span> <span lang="fr">English</span>
+        </button>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li class="disable left">
+            <a href="index.html">
+              <span lang="en">Presentation</span>
+              <span lang="fr">Présentation</span>
+            </a>
+          </li>
+          <li class="left">
+            <a href="resume.html">
+              <span lang="en">Resume</span>
+              <span lang="fr">Curriculum Vitae</span>
+            </a>
+          </li>
+          <li class="left">
+            <a href="project.html">
+              <span lang="en">Projects</span> <span lang="fr">Projets</span>
+            </a>
+          </li>
+          <li class="right">
+            <a
+              href="https://www.linkedin.com/in/simon-paquette-7533b6197/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li class="right">
+            <a href="https://github.com/SimonPaquette" target="_blank">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <body>
+    <div id="presentation">
+      <div id="myPicture">
+        <img src="picture/me.jpg" />
+      </div>
 
-        <header id="navbar">
-            <div id="navHeader">
-                <span lang="en">Presentation</span> <span lang="fr">Présentation</span>
-                <button id="toggleLang" style="float:right;">
-                    <span lang="en">Français</span> <span lang="fr">English</span>
-                </button>
-            </div>
-            <nav id="menu">
-                <ul>
-                    <li class="disable left"> <a href="index.html"> <span lang="en">Presentation</span> <span lang="fr">Présentation</span> </a> </li>
-                    <li class="left"> <a href="resume.html"> <span lang="en">Resume</span> <span lang="fr">Curriculum Vitae</span> </a> </li>
-                    <li class="left"> <a href="project.html"> <span lang="en">Projects</span> <span lang="fr">Projets</span> </a> </li>
-                    <li class="right"> <a href="https://www.linkedin.com/in/simon-paquette-7533b6197/" target="_blank"> LinkedIn </a> </li>
-                    <li class="right"> <a href="https://github.com/SimonPaquette" target="_blank"> GitHub </a> </li>
-                </ul>
-            </nav>
-        </header>
+      <div class="text" lang="en">
+        <p>
+          Hi! My name is Simon Paquette and I am currently at the University of
+          Ottawa in Computer Science. I am impressed with what programming
+          brings to our daily lives in all areas of employment. What attracts me
+          to computer science is to overcome challenges and create to advance
+          medical and engineering technologies. I am also passionate about
+          science, which led me to pursue a minor in biophysics. In addition, I
+          like playing soccer, I have been devoted since I was five years old. I
+          also enjoy running, I participated to the Défi Pierre Lavoie in high
+          school, a relay race between Quebec City and Montreal.
+        </p>
+        <p>
+          I am hardworking and persistent, which allows me to adapt to the
+          challenges that programming brings. Indeed, when a project presents
+          itself and I have to learn a new algorithm, I do the necessary
+          research to apply it effectively. I like the work to be done well and
+          I take the time to understand what needs to be done to complete a
+          project. With my experience working in the restaurant field, I have
+          learned to work effectively in a team. I like that we can interact
+          with peers to achieve a result together.
+        </p>
+        <p>
+          I invite you to visualize my resume and some small projects I have
+          done in programming.
+        </p>
+      </div>
 
-        <div id="presentation">
-
-            <div id="myPicture"> 
-                <img src="picture/me.jpg"/>
-            </div>
-
-            <div class="text" lang="en"> 
-                <p>Hi! My name is Simon Paquette and I am currently at the University of Ottawa in Computer Science. I am impressed with what programming brings to our daily lives in all areas of employment. What attracts me to computer science is to overcome challenges and create to advance medical and engineering technologies. I am also passionate about science, which led me to pursue a minor in biophysics. In addition, I like playing soccer, I have been devoted since I was five years old. I also enjoy running, I participated to the Défi Pierre Lavoie in high school, a relay race between Quebec City and Montreal.</p>
-                <p>I am hardworking and persistent, which allows me to adapt to the challenges that programming brings. Indeed, when a project presents itself and I have to learn a new algorithm, I do the necessary research to apply it effectively. I like the work to be done well and I take the time to understand what needs to be done to complete a project. With my experience working in the restaurant field, I have learned to work effectively in a team. I like that we can interact with peers to achieve a result together.</p>
-                <p>I invite you to visualize my resume and some small projects I have done in programming.</p>                
-            </div>
-
-            <div class="text" lang="fr"> 
-                <p>Bonjour! Je m'appelle Simon Paquette et je suis présentement à l'Université d'Ottawa en science informatique. Je suis impressionné de ce que la programmation apporte à notre quotidien dans tous les domaines de l'emploi. Ce qui m'attire de l'informatique, c'est de surmonter des défis et de pouvoir créer pour faire avancer les technologies médicales et les technologies de l'ingénierie. Je suis aussi passionné par les sciences, ce qui m'a poussé à effectuer une mineure en biophysique. De plus, j'aime bien jouer au soccer, j'en suis mordu depuis l'âge de cinq ans. Aussi, j'aime la course à pied, par ailleurs j'ai participé au Défi Pierre Lavoie au secondaire, une course à relais entre Québec et Montréal. </p>
-                <p>Je suis travaillant et persévérant, ce qui me permet de m'adapter aux défis que la programmation apporte. En effet, lorsqu'un projet se présente et que je dois apprendre un nouvel algorithme, j'effectue les recherches nécessaires pour l'appliquer efficacement. J'aime que le travail soit bien fait et je prends le temps de bien comprendre ce qui doit être fait pour réaliser un projet. Avec mes expériences de travail en restauration, j'ai appris à travailler efficacement en équipe. J'aime qu'on puisse interagir entre pairs pour arriver à un résultat tous ensemble.</p>
-                <p>Je vous invite à visualiser mon Curriculum Vitae et quelques petits projets que j'ai fait en programmation.</p> 
-            </div>
-
-        </div>
-
-    </body>
-
+      <div class="text" lang="fr">
+        <p>
+          Bonjour! Je m'appelle Simon Paquette et je suis présentement à
+          l'Université d'Ottawa en science informatique. Je suis impressionné de
+          ce que la programmation apporte à notre quotidien dans tous les
+          domaines de l'emploi. Ce qui m'attire de l'informatique, c'est de
+          surmonter des défis et de pouvoir créer pour faire avancer les
+          technologies médicales et les technologies de l'ingénierie. Je suis
+          aussi passionné par les sciences, ce qui m'a poussé à effectuer une
+          mineure en biophysique. De plus, j'aime bien jouer au soccer, j'en
+          suis mordu depuis l'âge de cinq ans. Aussi, j'aime la course à pied,
+          par ailleurs j'ai participé au Défi Pierre Lavoie au secondaire, une
+          course à relais entre Québec et Montréal.
+        </p>
+        <p>
+          Je suis travaillant et persévérant, ce qui me permet de m'adapter aux
+          défis que la programmation apporte. En effet, lorsqu'un projet se
+          présente et que je dois apprendre un nouvel algorithme, j'effectue les
+          recherches nécessaires pour l'appliquer efficacement. J'aime que le
+          travail soit bien fait et je prends le temps de bien comprendre ce qui
+          doit être fait pour réaliser un projet. Avec mes expériences de
+          travail en restauration, j'ai appris à travailler efficacement en
+          équipe. J'aime qu'on puisse interagir entre pairs pour arriver à un
+          résultat tous ensemble.
+        </p>
+        <p>
+          Je vous invite à visualiser mon Curriculum Vitae et quelques petits
+          projets que j'ai fait en programmation.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
