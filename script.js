@@ -2,7 +2,7 @@
     My presentation, resume and projects
     Simon Paquette - Portfolio
     Author: Simon Paquette
-    Latest update: 2021/08
+    Latest update: 2022/06
 */
 
 /*
