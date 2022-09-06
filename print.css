@@ -2,7 +2,6 @@
     My presentation, resume and projects
     Simon Paquette - Portfolio
     Author: Simon Paquette
-    Latest update: 2022/06
 
     CSS for printable page
     Only applicable to resume page
@@ -15,10 +14,10 @@
 */
 
 /* Remove page title and date */
-@page {
+/* @page {
   size: auto;
   margin: 8mm;
-}
+} */
 
 /* Hidden items */
 header,
@@ -33,9 +32,9 @@ header,
 */
 
 /* Set section div */
-section {
+/* section {
   break-inside: avoid;
-}
+} */
 
 /* Text display */
 h1 {
@@ -93,4 +92,8 @@ ul {
 .align {
   display: inline-block;
   width: 70px;
+}
+
+a {
+  all: unset;
 }
